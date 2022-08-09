@@ -1,5 +1,5 @@
 import React from 'react'
-import {Switch ,Link, Route} from 'react-router-dom'
+import { Switch, Link, Route} from 'react-router-dom'
 import {Layout, Typography,Space} from  'antd' 
 
 import {Navbar , Homepage,Exchanges,Cryptocurrencies,CryptoDetails,News} from './Components'
@@ -15,8 +15,9 @@ import  './App.css'
         <div className='main'>
             <Layout>
                 <div className='routes'>
-                    <switch>
+                    <Switch>                        
                         <Route exact path='/'>
+                            
                             <Homepage />
                         </Route>
                         <Route exact path='/Exchanges'>
@@ -31,21 +32,32 @@ import  './App.css'
                         <Route exact path='/news'>
                             <News  />
                         </Route>
-                    </switch>
+                        
+                    </Switch>
 
                 </div>
             </Layout>
 
+
+        <div className='footer' level={5} style={{color:'white' ,textAlign:'center'}}>
+            <Typography.Title >
+                CryptoGod<br />
+                All Rights Reserved
+
+            </Typography.Title>
+            <Space>
+                <Link to= '/'>Home</Link>
+                <Link to= '/Exchanges'>Exchanges</Link>
+                <Link to= '/news'>News</Link>
+            </Space>
+
         </div>
-
-        <div className='footer'>
-
         </div>
 
         
     </div>
 
-  )
+)
 }
 
 export default App
