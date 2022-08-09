@@ -13,11 +13,11 @@ import icon from '../Images/Cryptocurrency.png'
         <div className='logo-container'>
             <Avatar src={icon} size='large'/>
             <Typography.Title level={2} className='logo'>
-                <Link to='/'>CRYPTOGOD</Link>
+                <Link to="/">CRYPTOGOD</Link>
             </Typography.Title>
-            <Button>
+            {/* <Button>
 
-            </Button>
+            </Button> */}
 
         </div>
 
